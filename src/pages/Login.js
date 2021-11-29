@@ -5,7 +5,11 @@ import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import './login.css'
 import { Link } from 'react-router-dom';
 const Login = () => {
-    const onFinish = (values) => {
+  const loginHandler=()=>{
+    window.location.href = "/home";
+    console.log('homePage')
+  } 
+  const onFinish = (values) => {
         console.log('Received values of form: ', values);
         const userid=values.username;
         const password=values.password;
@@ -16,6 +20,8 @@ const Login = () => {
               console.log(`${userRecord[i].username} is Sucsessfully Login`);
               localStorage.setItem('isLoggedIn','1');
           }}
+
+    
       };
     return (
       <div className='container'>
@@ -67,7 +73,7 @@ const Login = () => {
       </Form.Item>
 
       <Form.Item>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button onClick={loginHandler} type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
         Or <Link to="/">Sign up Here</Link>
