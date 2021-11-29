@@ -27,16 +27,7 @@ const Signup = () => {
             // ..
           });
       console.log('User Details',userDetails)
-      let merge=undefined;
-        const preRecord=JSON.parse(localStorage.getItem('key'));
-        console.log(preRecord);
-        if (preRecord===null){
-            merge=[userDetails] 
-        }else{
-        merge=[...preRecord,userDetails]};
-        localStorage.setItem('key',JSON.stringify(merge));
-        
-      };
+        }
       const onFinishFailed = (errorInfo) => {
         console.log('Failed:', errorInfo);
       };
