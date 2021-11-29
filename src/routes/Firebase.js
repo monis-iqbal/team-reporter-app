@@ -1,15 +1,14 @@
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
 import { getFirestore, doc, setDoc, getDoc, addDoc, collection, getDocs, query,where } from "firebase/firestore";
 
 const firebaseApp = initializeApp({
-    apiKey: "AIzaSyC78s-ssNksImbAEKGZMj19Km8U_5NFD_U",
-    authDomain: "testing-e1e4f.firebaseapp.com",
-    projectId: "testing-e1e4f",
-    storageBucket: "testing-e1e4f.appspot.com",
-    messagingSenderId: "764881855683",
-    appId: "1:764881855683:web:86fa853d0f83139040ae76",
-    measurementId: "G-ZR6W70L1ET"
+    apiKey: "AIzaSyCDfv_r0clsKGYZdt6738LJIqSRAtcj9OA",
+    authDomain: "team-reporter-app-12d97.firebaseapp.com",
+    projectId: "team-reporter-app-12d97",
+    storageBucket: "team-reporter-app-12d97.appspot.com",
+    messagingSenderId: "865845124525",
+    appId: "1:865845124525:web:cf8f56cc4b349ef9ba5524"
 });
 
 const auth = getAuth();
@@ -20,6 +19,7 @@ export {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     onAuthStateChanged,
+    signOut,
 
     db,
     doc,
