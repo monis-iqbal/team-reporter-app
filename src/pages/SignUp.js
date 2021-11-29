@@ -1,6 +1,7 @@
 import React from 'react'
 import { Form, Input, Button, Checkbox } from 'antd';
 import './login.css'
+import { Link } from 'react-router-dom';
 let userDetails={};
 const Signup = () => {
     const onFinish = (values) => {
@@ -58,7 +59,7 @@ const Signup = () => {
       <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
         <Button type="primary" htmlType="submit">
           Signup
-        </Button> Already have an Account <a href='login'>Login!</a>
+        </Button> Already have an Account <Link to="/login">Login</Link>
       </Form.Item>
     </Form>
     </div>

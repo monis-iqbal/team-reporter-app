@@ -1,13 +1,12 @@
 import React from 'react'
 import { Button } from 'antd';
+import { Link } from 'react-router-dom';
 const Home = () => {
-    const logoutHandler=()=>{
-        window.location.href = "/";
-    }
+    
     return (
         <div>
             <h1>This is Home Page</h1>
-            <Button onClick={logoutHandler}type="logout">Logout</Button>
+            <Link to="/login">Logout</Link>
         </div>
     )
 
