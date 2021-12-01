@@ -30,15 +30,15 @@
 
 
 #team-create-btn{
-    border-radius: 40px;
-    height: 60px;
-    width: 60px;
+    /* border-radius: 40px; */
+    height: 40px;
+    width: 90px;
     background-color: rgb(18, 141, 241);
-    font-size: 30px;
+    font-size: 10px;
     border: none;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 5px;
+    bottom: 5px;
 
 
 }
@@ -47,4 +47,13 @@
     position: absolute;
     right: 7px;
     top: 7px;
+}
+
+
+#modal-input{
+    margin-bottom: 20px;
+}
+
+.card-adjust {
+    display:  none;
 }
